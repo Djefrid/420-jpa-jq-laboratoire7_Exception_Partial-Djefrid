@@ -10,6 +10,11 @@ namespace Partie1
     {
         static void Main(string[] args)
         {
+            Calculateur calculateur = new Calculateur();
+
+            calculateur.Diviser();
+
+            Console.ReadKey();
         }
     }
 }
