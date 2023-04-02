@@ -14,6 +14,8 @@ namespace Partie1
 
             calculateur.Diviser();
 
+            calculateur.Multiplier();
+
             Console.ReadKey();
         }
     }
