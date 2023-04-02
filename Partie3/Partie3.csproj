@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4F7174EE-9231-4D99-B388-52B317111D5B}</ProjectGuid>
+    <ProjectGuid>{0C441ABF-12CB-48E3-BF6B-B9DA671EB382}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Partie2</RootNamespace>
-    <AssemblyName>Partie2</AssemblyName>
+    <RootNamespace>Partie3</RootNamespace>
+    <AssemblyName>Partie3</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Catalogue.cs" />
-    <Compile Include="Catalogue1.cs" />
-    <Compile Include="Film.cs" />
-    <Compile Include="Film1.cs" />
-    <Compile Include="Production.cs" />
+    <Compile Include="Mission.cs" />
+    <Compile Include="Mission1.cs" />
+    <Compile Include="Planete.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vaisseau.cs" />
+    <Compile Include="Vaisseau1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
