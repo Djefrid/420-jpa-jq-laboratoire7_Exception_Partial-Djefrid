@@ -10,9 +10,19 @@ namespace FilmNamespace
     {
         public Catalogue Catalogues { get; set; }
 
+        public Production()
+        {
+            Catalogues = new Catalogue();
+        }
+
         public void AddFilmCatalogue(Film film)
         {
             Catalogues.AjouterFilm(film);
+        }
+
+        public void DeleteFilmCatalogue(Film film)
+        {
+            Catalogues.SupprimerFilm(film);
         }
 
         public void AfficherFilmscatalogue()

@@ -10,7 +10,10 @@ namespace FilmNamespace
     {
         List<Film> Films {  get; set; }
 
-        public Catalogue() { }
+        public Catalogue() 
+        {
+            Films = new List<Film>();
+        }
 
         public void AjouterFilm(Film film)
         {

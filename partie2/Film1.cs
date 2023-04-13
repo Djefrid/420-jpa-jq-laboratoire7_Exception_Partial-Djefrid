@@ -8,6 +8,7 @@ namespace FilmNamespace
 {
     internal partial class Film
     {
-
+        public string Synopsis { get; set; }
+        public List< string> Genres { get; set; }
     }
 }

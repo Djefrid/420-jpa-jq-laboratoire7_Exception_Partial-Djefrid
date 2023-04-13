@@ -12,7 +12,6 @@ namespace Partie1
         public Calculateur() { }
 
 
-
         public int VerifierSaisie()
         {
             bool estValide = false;

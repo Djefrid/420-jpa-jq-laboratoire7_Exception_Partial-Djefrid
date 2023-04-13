@@ -11,41 +11,25 @@ namespace Partie2
     {
         static void Main(string[] args)
         {
-            Film film = new Film();
+            List<string> genre = new List<string> { "combat ", "action" };
+            List<string> Acteurs = new List<string> { "Obrayant" };
+            Film film = new Film("spartacus", "Obrayant", 2015, Acteurs, genre, "les genis");
 
-            film.Titre = "Scorpion";
-            film.Directeur = "Obrayant";
-            film.Annee = 2015;
-            film.Acteurs = "Obrayant";
+            List<string> genre1 = new List<string> { "Histoire ", "Drame", "Geurre" };
+            List<string> Acteurs1 = new List<string> { " Pierre Lottin", "Théo Cholbi", " Yannick Choirat" , "Omar Boulakirba" };
+            Film film1 = new Film("Les Haris", "Obrayant", 2022, Acteurs1,genre1, "les genis");
 
+            List<string> genre2 = new List<string> { "Drame ", " Thriller" };
+            List<string> Acteurs2 = new List<string> { "Willem Dafoe", "Gene Bervoets", "Josia Krug" , "Eliza Stuyck" };
+            Film film2 = new Film("Inside", "Obrayant", 2023, Acteurs2, genre2, "les genis");
 
-            Film film1 = new Film();
+            List<string> genre3 = new List<string> { "Drame ", "Histoire" };
+            List<string> Acteurs3 = new List<string> { "Obrayant" };
+            Film film3 = new Film("L'Homme De Dieu", "Yelena Popovic", 2021, Acteurs3, genre3, "les genis");
 
-            film1.Titre = "Scorpion";
-            film1.Directeur = "Obrayant";
-            film1.Annee = 2015;
-            film1.Acteurs = "Obrayant";
-
-            Film film2 = new Film();
-
-            film2.Titre = "Scorpion";
-            film2.Directeur = "Obrayant";
-            film2.Annee = 2015;
-            film2.Acteurs = "Obrayant";
-
-            Film film3 = new Film();
-
-            film3.Titre = "Scorpion";
-            film3.Directeur = "Obrayant";
-            film3.Annee = 2015;
-            film3.Acteurs = "Obrayant";
-
-            Film film4 = new Film();
-
-            film4.Titre = "Scorpion";
-            film4.Directeur = "Obrayant";
-            film4.Annee = 2015;
-            film4.Acteurs = "Obrayant";
+            List<string> genre4 = new List<string> { "Fantastique ", "action" };
+            List<string> Acteurs4 = new List<string> { " Tyler Hoechlin", " Elizabeth Tulloch" , "Alex Garfin" };
+            Film film4 = new Film("Superman & Loïs - Saison 3", " Todd Helbing", 2015, Acteurs4, genre4, "les genis");
 
             Production productions = new Production();
 
@@ -54,7 +38,10 @@ namespace Partie2
             productions.AddFilmCatalogue(film2);
             productions.AddFilmCatalogue(film3);
             productions.AddFilmCatalogue(film4);
-
+            Console.WriteLine("after -------------------------------------------------------\n");
+            productions.AfficherFilmscatalogue();
+            productions.DeleteFilmCatalogue(film);
+            Console.WriteLine("before -------------------------------------------------------\n");
             productions.AfficherFilmscatalogue();
         }
     }
