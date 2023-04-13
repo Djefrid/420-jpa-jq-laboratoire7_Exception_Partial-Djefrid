@@ -33,11 +33,8 @@ namespace Partie3
                 finally
                 {
                     if (!estValide)
-                    {
                         Console.WriteLine("Ressayer", color: Color.Blue);
-                    }
                 }
-
             } while (!estValide);
 
             return nbre;
@@ -49,7 +46,6 @@ namespace Partie3
             int DA = 255;
             int V = 255;
             int ID = 0;
-
             Console.WriteAscii("  ---BIENVENUE---  ", Color.FromArgb(DA, V, ID));
         }
 
@@ -66,9 +62,7 @@ namespace Partie3
             Console.WriteLine("-------------------------------------------------------------");
 
             Console.WriteLine("\nNB : pour eviter de faire ses erreur de saisie sur les nom de planete afficher lès avant la verification", color: Color.Yellow);
-            Console.WriteLine("\nEntrer le nombre correspondant a voter choix");
-
-            
+            Console.WriteLine("\nEntrer le nombre correspondant a voter choix", color: Color.Green);
         }
 
         static void Main(string[] args)
@@ -149,7 +143,6 @@ namespace Partie3
                         string nomPlanete = Console.ReadLine();
                         string testeEnMinusc = nomPlanete.ToLower();
                         Planete planete = null;
-
                         for (int i = 0;i<monAgence.Planetes.Count;i++)
                         {
                             if(testeEnMinusc == monAgence.Planetes[i].NomPlanete)
@@ -162,11 +155,6 @@ namespace Partie3
                         break;
                 }
             }
-
-
-
-
-
         }
     }
 }

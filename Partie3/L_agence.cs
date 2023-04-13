@@ -76,7 +76,7 @@ namespace Partie3
                 else
                 {
                     planete.Explorer = true;
-                    Console.WriteLine("Le vaisseau  été lancer avec succes");
+                    Console.WriteLine("Le vaisseau  été lancer avec succes", color: Color.Yellow);
                 }
             }
             catch (MonException monEx)
@@ -92,9 +92,7 @@ namespace Partie3
                 if (vaisseau == null || (vaisseau != null && vaisseau.Missions == null))
                     throw new MonException("Le vaiseau ne peut pas etre lancer car : \nSoit le vaisseau est null ou le vaiseau n'a aucunne mission de plannifier");
                 else
-                {
-                    Console.WriteLine("Le vaisseau  été lancer avec succes");
-                }
+                    Console.WriteLine("Le vaisseau  été lancer avec succes", color: Color.Yellow);
             }
             catch (MonException monEx)
             {
