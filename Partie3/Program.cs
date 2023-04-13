@@ -41,7 +41,7 @@ namespace Partie3
         }
 
 
-        static void TestConsole()
+        static void MessageDeBienvenue()
         {
             int DA = 255;
             int V = 255;
@@ -49,7 +49,7 @@ namespace Partie3
             Console.WriteAscii("  ---BIENVENUE---  ", Color.FromArgb(DA, V, ID));
         }
 
-        static void option()
+        static void Option()
         {
             Console.WriteLine("\n-------------------------------------------------------------");
             Console.WriteLine("-- 1. Afficher les vaisseaux                               --");
@@ -67,7 +67,7 @@ namespace Partie3
 
         static void Main(string[] args)
         {
-            TestConsole();
+            MessageDeBienvenue();
 
             L_agence monAgence = new L_agence();
 
@@ -75,7 +75,7 @@ namespace Partie3
 
             while (valide == true)
             {
-                option();
+                Option();
                 int saisie = VerifierSaisie();
 
                 switch (saisie)
@@ -143,15 +143,16 @@ namespace Partie3
                         string nomPlanete = Console.ReadLine();
                         string testeEnMinusc = nomPlanete.ToLower();
                         Planete planete = null;
-                        for (int i = 0;i<monAgence.Planetes.Count;i++)
+                        for (int i = 0; i < monAgence.Planetes.Count; i++)
                         {
-                            if(testeEnMinusc == monAgence.Planetes[i].NomPlanete)
+                            if (testeEnMinusc == monAgence.Planetes[i].NomPlanete)
                                 planete = monAgence.Planetes[i];
                         }
                         monAgence.VerifierPlanete(planete);
                         break;
                     case 7:
                         valide = false;
+                        Console.WriteLine("Merci d'avoir participer. Bye!", color: Color.Yellow);
                         break;
                 }
             }
