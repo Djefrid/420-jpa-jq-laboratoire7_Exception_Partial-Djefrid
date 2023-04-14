@@ -68,7 +68,7 @@ namespace Partie3
         static void Main(string[] args)
         {
             MessageDeBienvenue();
-
+            //Console.WriteLine();
             L_agence monAgence = new L_agence();
 
             bool valide = true;
